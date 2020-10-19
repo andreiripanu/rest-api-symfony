@@ -1,0 +1,15 @@
+blank:
+  lastname: Lastname is blank
+  firstname: Firstname is blank
+  gender: Gender is blank
+  email: Email is blank
+  mobile: Mobile is blank
+  registration_number: Registration number is blank
+
+invalid:
+  lastname: Lastname is not valid
+  firstname: Firstname is not valid
+  gender: Gender is not valid
+  email: Email is not valid
+  mobile: Mobile is not valid
+  registration_number: Registration number is not valid

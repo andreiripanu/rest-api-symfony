@@ -7,12 +7,15 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
+/**
+ * This class is a form used to create or update a student.
+ */
 class StudentType extends AbstractType {
   /**
    * @param FormBuilderInterface $builder
    * @param array $options
    */
-  public function buildForm(FormBuilderInterface $builder, array $options)
+  public function buildForm(FormBuilderInterface $builder, array $options): void
   {
     $builder
       ->add('lastname', null, [
@@ -39,7 +42,7 @@ class StudentType extends AbstractType {
   /**
    * @param OptionsResolver $resolver
    */
-  public function configureOptions(OptionsResolver $resolver)
+  public function configureOptions(OptionsResolver $resolver): void
   {
     $resolver->setDefaults([
       'data_class' => Student::class,
@@ -48,7 +51,10 @@ class StudentType extends AbstractType {
     ]);
   }
 
-  public function getBlockPrefix()
+  /**
+   * @return string
+   */
+  public function getBlockPrefix(): string
   {
     return '' ;
   }

@@ -10,7 +10,8 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 /**
  * This class is a form used to create or update a student.
  */
-class StudentType extends AbstractType {
+class StudentType extends AbstractType
+{
   /**
    * @param FormBuilderInterface $builder
    * @param array $options

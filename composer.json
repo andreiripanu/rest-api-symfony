@@ -1,7 +1,7 @@
 {
   "name": "arcsym/rest-api-symfony",
-  "description": "Examples about REST API in PHP with Symfony",
-  "keywords": ["rest api", "symfony", "php", "learning", "examples"],
+  "description": "An example about REST API in PHP with Symfony, realising CRUD operations",
+  "keywords": ["rest api", "php", "symfony", "crud", "learning", "example"],
   "authors": [
     {
       "name": "Andrei Ripanu",

@@ -13,3 +13,12 @@ invalid:
   email: Email is not valid
   mobile: Mobile is not valid
   registration_number: Registration number is not valid
+  data: Data is not valid
+  json: JSON is not valid
+
+message:
+  not_found: {name} not found
+  updated: {name} updated successfully
+  created: {name} created successfully
+  deleted: {name} deleted successfully
+  json_content: Content type must be JSON

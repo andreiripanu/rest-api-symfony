@@ -17,8 +17,8 @@ invalid:
   json: JSON is not valid
 
 message:
-  not_found: {name} not found
-  updated: {name} updated successfully
-  created: {name} created successfully
-  deleted: {name} deleted successfully
+  not_found: '%name% not found'
+  updated: '%name% updated successfully'
+  created: '%name% created successfully'
+  deleted: '%name% deleted successfully'
   json_content: Content type must be JSON

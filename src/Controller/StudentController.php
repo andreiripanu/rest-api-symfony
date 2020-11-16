@@ -93,7 +93,7 @@ class StudentController extends AbstractController
     if(empty($student)) {
       $response = [
         'statusCode' => Response::HTTP_NOT_FOUND,
-        'message' => [$this->translator->trans('message.not_found', ['name' => 'Student'])]
+        'message' => [$this->translator->trans('message.not_found', ['%name%' => 'Student'])]
       ];
 
       return $this->json($response, $response['statusCode']);
@@ -159,7 +159,7 @@ class StudentController extends AbstractController
 
     $response = [
       'statusCode' => Response::HTTP_CREATED,
-      'message' => [$this->translator->trans('message.created', ['name' => 'Student'])],
+      'message' => [$this->translator->trans('message.created', ['%name%' => 'Student'])],
       'data' => $student->objectToArray(),
     ];
 
@@ -187,7 +187,7 @@ class StudentController extends AbstractController
     if(empty($student)) {
       $response = [
         'statusCode' => Response::HTTP_NOT_FOUND,
-        'message' => [$this->translator->trans('message.not_found', ['name' => 'Student'])]
+        'message' => [$this->translator->trans('message.not_found', ['%name%' => 'Student'])]
       ];
 
       return $this->json($response, $response['statusCode']);
@@ -228,7 +228,7 @@ class StudentController extends AbstractController
 
     $response = [
       'statusCode' => Response::HTTP_OK,
-      'message' => [$this->translator->trans('message.updated', ['name' => 'Student'])],
+      'message' => [$this->translator->trans('message.updated', ['%name%' => 'Student'])],
       'data' => $student->objectToArray(),
     ];
 
@@ -255,7 +255,7 @@ class StudentController extends AbstractController
     if(empty($student)) {
       $response = [
         'statusCode' => Response::HTTP_NOT_FOUND,
-        'message' => [$this->translator->trans('message.not_found', ['name' => 'Student'])],
+        'message' => [$this->translator->trans('message.not_found', ['%name%' => 'Student'])],
       ];
 
       return $this->json($response, $response['statusCode']);
@@ -266,7 +266,7 @@ class StudentController extends AbstractController
 
     $response = [
       'statusCode' => Response::HTTP_OK,
-      'message' => [$this->translator->trans('message.deleted', ['name' => 'Student'])]
+      'message' => [$this->translator->trans('message.deleted', ['%name%' => 'Student'])]
     ];
 
     return $this->json($response, $response['statusCode']);
